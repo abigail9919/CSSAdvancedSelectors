@@ -1,0 +1,42 @@
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+/* attribute selector: targets elements with the attribute of 'special' that are listed as an li */
+li[special] {
+    color: red;
+}
+
+/* attribute selector: targets elements with the attribute of 'loud' that are listed as an li */
+li[loud] {
+    font-size: 24px;
+}
+
+/* pseudo-element selector: makes the first line in all .box divs italicized */
+.box::first-line {
+    font-style: italic;
+}
+
+/* attribute selector: targets newColor elements found in p tags */
+p[newColor] {
+    color: white;
+}
+
+button {
+    padding: 10px;
+    width: 100px;
+    height: 75px;
+    border-radius: 25px;
+}
+
+/* pseudo-class selector */
+button:hover {
+    background-color: blue;
+}
+
+button:focus {
+    border-radius: 0px;
+    transform: scale(2);
+}
